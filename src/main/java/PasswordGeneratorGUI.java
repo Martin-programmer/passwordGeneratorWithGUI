@@ -56,7 +56,6 @@ public class PasswordGeneratorGUI extends JFrame {
         includeUpperLettersBox = new JCheckBox("Include Upper Letters");
         includeLowerLettersBox = new JCheckBox("Include Lower Letters");
 
-        // Apply the same font and background to all checkboxes
         Font checkBoxFont = new Font("Arial", Font.BOLD, 12);
         for (JCheckBox checkBox : new JCheckBox[]{includeNumbersBox, includeSymbolsBox, includeUpperLettersBox, includeLowerLettersBox}) {
             checkBox.setFont(checkBoxFont);
