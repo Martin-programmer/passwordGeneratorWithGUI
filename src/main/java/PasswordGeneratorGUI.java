@@ -26,7 +26,7 @@ public class PasswordGeneratorGUI extends JFrame {
         mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
         mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        mainPanel.setBackground(new Color(245, 245, 245)); // Light gray background
+        mainPanel.setBackground(new Color(245, 245, 245));
 
         addComponentWithLabel("Password Length: (At least 12 symbols)", mainPanel);
         addCheckBoxes(mainPanel);
@@ -40,7 +40,7 @@ public class PasswordGeneratorGUI extends JFrame {
 
     private void addComponentWithLabel(String labelText, JPanel panel) {
         JPanel tempPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        tempPanel.setBackground(new Color(245, 245, 245)); // Match the main panel background
+        tempPanel.setBackground(new Color(245, 245, 245));
         JLabel label = new JLabel(labelText);
         label.setFont(new Font("Arial", Font.PLAIN, 12));
         lengthField = new JTextField(10);
@@ -84,9 +84,9 @@ public class PasswordGeneratorGUI extends JFrame {
     private void setupGenerateButton(JPanel panel) {
         generateButton = new JButton("Generate Password");
         generateButton.setFont(new Font("Arial", Font.BOLD, 12));
-        generateButton.setBackground(new Color(100, 149, 237)); // Cornflower blue
+        generateButton.setBackground(new Color(100, 149, 237));
         generateButton.setForeground(Color.WHITE);
-        generateButton.setFocusPainted(false); // Remove focus border to enhance appearance
+        generateButton.setFocusPainted(false);
         generateButton.addActionListener(this::generatePassword);
         panel.add(generateButton);
     }
